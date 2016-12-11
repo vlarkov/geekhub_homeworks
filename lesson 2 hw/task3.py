@@ -10,15 +10,14 @@ my_str = input()
 first = ''
 i = 0
 
-#print(int(len(my_str) / 2))
-#!странно, но IDE выдает int(len(my_str) / 2 float, а интерпретатор на сайте int? т.е. 2.5 и 2 соответственно для
-#строки "Hello"
+# print(int(len(my_str) / 2))
+# !странно, но IDE выдает int(len(my_str) / 2 float, а интерпретатор на сайте int? т.е. 2.5 и 2 соответственно для
+# строки "Hello"
 
 while (i < int(len(my_str) / 2) and len(my_str) % 2 == 0) or (len(my_str) % 2 == 1 and i < int(len(my_str) / 2) + 1):
     first += my_str[i]
     i += 1
 
-#print(i)
 
 last = my_str[i:]
 result = last + first
